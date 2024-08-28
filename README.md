@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blind-for-students
+
+**Blind-for-students** is a platform that allows students to ask queries anonymously related to higher studies, job opportunities, and general topics. The platform is designed to facilitate anonymous interactions, enabling users to seek and provide answers without revealing their identities. Whether you're looking for guidance on academic paths or career opportunities, Blind-for-students connects you with knowledgeable individuals who can offer valuable insights.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building server-side rendered and statically generated web applications.
+- **Tailwind CSS**: A utility-first CSS framework for designing responsive and modern user interfaces.
+- **Axios**: A promise-based HTTP client for making requests to APIs.
+- **PostgreSQL**: A powerful, open-source relational database system.
+- **Prisma**: An ORM (Object-Relational Mapping) tool for interacting with the PostgreSQL database.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Blind-for-students, follow these steps:
 
+### Prerequisites
+
+- Node.js (v14 or later)
+- PostgreSQL
+- Yarn or npm (Node.js package managers)
+
+### Clone the Repository
+
+### Install Dependencies
 ```bash
-npm run dev
+yarn install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Update the .env by following .env.example
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- For the database, you can use docker by following the video linked belo
+https://www.youtube.com/watch?v=RdPYA-wDhTA
+- Else, you can get a database from neon.tech or aiven.io or any other online platform. Just search for neon or aiven in your browser and follow the instructions.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prisma
 
-## Learn More
+- Run the Prisma migrations to set up the database schema.
+```bash
+npx prisma migrate dev
 
-To learn more about Next.js, take a look at the following resources:
+```
+### Run the development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn dev
+# or
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
 
-## Deploy on Vercel
+### Run the production ready code
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+# To compile and generate production ready files
+npm run build
+# or
+yarn build
+
+```
+
+```bash
+# After the build process completes, you can start the production server using
+npm start
+#or
+yarn start
+
+```
+- Analyze and inform me if you find a bug or if you have any issues with the project.
