@@ -22,6 +22,11 @@ To get started with Blind-for-students, follow these steps:
 
 ### Clone the Repository
 
+```bash
+
+git clone https://github.com/Prabhu231/Blind-for-Students.git
+```
+
 ### Install Dependencies
 ```bash
 yarn install
