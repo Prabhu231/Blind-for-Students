@@ -22,6 +22,11 @@ To get started with Blind-for-students, follow these steps:
 
 ### Clone the Repository
 
+```bash
+
+git clone https://github.com/Prabhu231/Blind-for-Students.git
+```
+
 ### Install Dependencies
 ```bash
 yarn install
@@ -32,7 +37,7 @@ npm install
 
 ### Update the .env by following .env.example
 
-- For the database, you can use docker by following the video linked belo
+- For the database, you can use docker by following the video linked below
 https://www.youtube.com/watch?v=RdPYA-wDhTA
 - Else, you can get a database from neon.tech or aiven.io or any other online platform. Just search for neon or aiven in your browser and follow the instructions.
 
