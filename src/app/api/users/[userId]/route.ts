@@ -19,26 +19,3 @@ export async function GET(req: NextRequest) {
     }
 }
 
-export async function POST(req: NextRequest) {
-    try{
-        const pathName = req.nextUrl.pathname
-        const pathArr = pathName.split('/')
-        return NextResponse.json({message: pathArr})
-        const userId = Number(pathArr.pop())
-        const collegeName = pathArr.pop()
-        
-
-    const details = await prisma.user.update({
-        where: {
-            id: userId
-        },
-        data: {
-            collegeName
-        }
-    })
-    return NextResponse.json({message: details})
-}
-    catch(err) {
-        return NextResponse.json({message: err})
-    }
-}

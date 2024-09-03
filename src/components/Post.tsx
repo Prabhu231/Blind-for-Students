@@ -5,7 +5,7 @@ import axios from 'axios';
 
 interface PostProps {
     content: String;
-    collegeName: String;
+    collegeName?: String;
     comments: String[];
     postId: number
 }

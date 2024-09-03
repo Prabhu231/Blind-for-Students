@@ -1,5 +1,4 @@
 'use client'
-import '@/input.css'
 import { useRouter } from 'next/navigation'
 
 export default function SignInButton() {

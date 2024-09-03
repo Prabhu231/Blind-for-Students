@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import '@/input.css'
 
 export const metadata: Metadata = {
   title: "Blind for Students.",
